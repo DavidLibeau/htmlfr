@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="htmlfr.xsl"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+<htmlfr>
+	<tete>
+		<titre>Bonjour</titre>
+		<lien href="test.htmlfr.css" type="text/css" rel="feuillestyle"/>
+	</tete>
+	<corps>
+		<t1>Bonjour</t1>
+		<p>Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l href="http://htmlfr.org" cible="_onglet">En savoir plus</l></p>
+	</corps>
+</htmlfr>
