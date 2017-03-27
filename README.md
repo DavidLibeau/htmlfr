@@ -2,11 +2,31 @@
 
 >Rendre accessible la création de sites web à tous. Écrire du HTML en français.
 
-[En savoir plus](https://htmlfr.org)
+[En savoir plus (HTMLfr.org)](https://htmlfr.org)
+
+*:warning: HTMLfr est encore en cours de développement ! Voir les [versions disponibles](https://github.com/DavidLibeau/htmlfr/releases).*
 
 ## :dart: Intention 
 
-Pour beaucoup de personnes, l'anglais est un frein dans l'apprentissage des nouvelles technologies. Pourquoi ne pas utiliser le français pour créer ou apprendre à créer des sites web ? HTMLfr.org permet cela de façon très simple.
+Pour beaucoup de personnes, **l'anglais est un frein dans l'apprentissage des nouvelles technologies**. Pourquoi ne pas utiliser le français pour créer ou apprendre à créer des sites web ? HTMLfr.org permet cela de façon très simple.
+Voici un exemple très simple pour commencer : 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lib/algorithme-htmlfr.xsl"?>
+<htmlfr>
+  <tete>
+    <titre>Bonjour</titre>
+    <lien href="test.htmlfr.css" type="text/css" rel="feuillestyle" />
+  </tete>
+  <corps>
+    <t1>Bonjour</t1>
+    <p>
+      Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l href="http://htmlfr.org" cible="_onglet" data-test="test">En savoir plus</l>
+    </p>
+  </corps>
+</htmlfr>
+```
+Attention, les deux premières lignes de l'exemple sont obligatoires, ainsi que le fichier *algorithme-htmlfr.xsl* !
 
 ## :computer: Technologies utilisées
 
