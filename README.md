@@ -21,6 +21,6 @@ Vous pouvez dès à présent coder des sites web en français. Visitez [HTMLfr.o
 
 Ce projet est libre d'utilisation, de modification et de contribution. Contactez [@DavidLibeau](https://davidlibeau.fr/Contact) pour participer, ou contribuez directement sur GitHub.
 
-## Licence
+## :page_with_curl: Licence
 
 HTMLfr est sous [licence libre](LICENSE). Vous pouvez utiliser, modifier, distribuer, contribuer, tant que vous continuez de repecter la liberté des autres à faire pareil. C'est le principe de la licence libre de [GNU](https://gnu.org).
