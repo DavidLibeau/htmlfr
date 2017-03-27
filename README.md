@@ -9,6 +9,11 @@
 ## :dart: Intention 
 
 Pour beaucoup de personnes, **l'anglais est un frein dans l'apprentissage des nouvelles technologies**. Pourquoi ne pas utiliser le français pour créer ou apprendre à créer des sites web ? HTMLfr.org permet cela de façon très simple.
+
+## :thumbsup: Utiliser HTMLfr
+
+Vous pouvez dès à présent coder des sites web en français. Visitez [HTMLfr.org](https://htmlfr.org) pour plus d'informations.
+
 Voici un exemple très simple pour commencer : 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -31,11 +36,6 @@ Attention, les deux premières lignes de l'exemple sont obligatoires, ainsi que 
 ## :computer: Technologies utilisées
 
 HTMLfr utilise le strandard XML et le langauge XSLT pour transformer un document HTML en français, en un document HTML en anglais, interprétable par les navigateurs web. Il utilise JavaScript pour transformé du CSS en français en un CSS en anglais.
-
-
-## :thumbsup: Utiliser HTMLfr
-
-Vous pouvez dès à présent coder des sites web en français. Visitez [HTMLfr.org](https://htmlfr.org) pour plus d'informations.
 
 ## :blue_heart: Contribution
 
