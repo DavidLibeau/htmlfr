@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="generateurAlgorithme-htmlfr.xsl"?>
+<htmlfr>
+    <balise>
+        <en>a</en>
+        <fr>l</fr>
+    </balise>
+    <balise>
+        <en>p</en>
+        <fr>p</fr>
+    </balise>
+    <balise>
+        <en>h1</en>
+        <fr>t1</fr>
+    </balise>
+    <balise>
+        <en>link</en>
+        <fr>lien</fr>
+    </balise>
+    <balise>
+        <en>title</en>
+        <fr>titre</fr>
+    </balise>
+    <balise>
+        <en>strong</en>
+        <fr>fort</fr>
+    </balise>
+    <attribut>
+        <en>target</en>
+        <fr>cible</fr>
+        <contenu>
+            <en>_blank</en>
+            <fr>_onglet</fr>
+        </contenu>
+        <contenu>
+            <en>_self</en>
+            <fr>_ici</fr>
+        </contenu>
+        <contenu>
+            <en>_parent</en>
+            <fr>_parent</fr>
+        </contenu>
+        <contenu>
+            <en>_top</en>
+            <fr>_dessus</fr>
+        </contenu>
+    </attribut>
+</htmlfr>

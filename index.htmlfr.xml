@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="htmlfr.xsl"?>
-<?xml-stylesheet type="text/css" href="test.css"?>
+<?xml-stylesheet type="text/xsl" href="lib/algorithme-htmlfr.xsl"?>
 <htmlfr>
 	<tete>
 		<titre>Bonjour</titre>
@@ -8,6 +7,6 @@
 	</tete>
 	<corps>
 		<t1>Bonjour</t1>
-		<p>Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l href="http://htmlfr.org" cible="_onglet">En savoir plus</l></p>
+		<p>Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l href="http://htmlfr.org" cible="_onglet" data-test="test">En savoir plus</l></p>
 	</corps>
 </htmlfr>
