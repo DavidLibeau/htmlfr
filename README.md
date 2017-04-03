@@ -21,12 +21,12 @@ Voici un exemple très simple pour commencer :
 <htmlfr>
   <tete>
     <titre>Bonjour</titre>
-    <lien href="test.htmlfr.css" type="text/css" rel="feuillestyle" />
+    <lien url="test.htmlfr.css" type="text/css" rel="feuillestyle" />
   </tete>
   <corps>
     <t1>Bonjour</t1>
     <p>
-      Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l href="http://htmlfr.org" cible="_onglet" data-test="test">En savoir plus</l>
+      Et si on pouvait écrire du HTML, créer des sites web, en <fort>français</fort> ? <l url="http://htmlfr.org" cible="_onglet" data-test="test">En savoir plus</l>
     </p>
   </corps>
 </htmlfr>
@@ -35,7 +35,7 @@ Attention, les deux premières lignes de l'exemple sont obligatoires, ainsi que 
 
 ## :computer: Technologies utilisées
 
-HTMLfr utilise le strandard XML et le langauge XSLT pour transformer un document HTML en français, en un document HTML en anglais, interprétable par les navigateurs web. Il utilise JavaScript pour transformé du CSS en français en un CSS en anglais.
+HTMLfr utilise le strandard XML et le language XSLT pour transformer un document HTML en français, en un document HTML en anglais, interprétable par les navigateurs web. Il utilise JavaScript pour transformer du CSS en français en un CSS en anglais.
 
 ## :blue_heart: Contribution
 
