@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias">
-    <xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl" />
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output method="xml" indent="yes" />
 
@@ -12,6 +11,7 @@
             <xsl:element name="xsl:output">
                 <xsl:attribute name="method">html</xsl:attribute>
                 <xsl:attribute name="indent">yes</xsl:attribute>
+                <xsl:attribute name="doctype-system">about:legacy-compat</xsl:attribute>
             </xsl:element>
 
             <xsl:element name="xsl:template">
@@ -36,10 +36,10 @@
                         <xsl:attribute name="src">https://dav.li/jquery/3.1.1.min.js</xsl:attribute>
                     </xsl:element>
                     <xsl:element name="script">
-                        <xsl:attribute name="src">lib-css.j</xsl:attribute>
+                        <xsl:attribute name="src">https://htmlfr.org/lib/lib-css.js</xsl:attribute>
                     </xsl:element>
                     <xsl:element name="script">
-                        <xsl:attribute name="src">htmlfr.js</xsl:attribute>
+                        <xsl:attribute name="src">https://htmlfr.org/lib/htmlfr.js</xsl:attribute>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
@@ -47,7 +47,7 @@
 
             <xsl:for-each select="//balise">
                 <xsl:element name="xsl:template">
-                    <xsl:attribute name="match">//<xsl:value-of select="./fr"></xsl:value-of></xsl:attribute>
+                    <xsl:attribute name="match">//<xsl:value-of select="./fr"/></xsl:attribute>
                     <xsl:element name="{./en}">
                         <xsl:call-template name="gererAttributs"/>
                         <xsl:element name="xsl:apply-templates"></xsl:element>
