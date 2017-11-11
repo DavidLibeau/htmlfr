@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="documentation-htmlfr.xsl"?>
+<?xml-stylesheet type="text/xsl" href="generateurAlgorithme-htmlfr.xsl"?>
 <htmlfr version="1.0" date="09/04/17">
     <commentaire type="t2">HTML</commentaire>
     <balise>
@@ -299,7 +299,6 @@
         <en>p</en>
         <fr>p</fr>
         <fr>paragraphe</fr>
-        <fr>§</fr>
     </balise>
     <balise>
         <en>param</en>
@@ -479,7 +478,6 @@
             <fr>_dessus</fr>
         </contenu>
     </attribut>
-	
 	
 	<style-propriete>
 		<en></en>

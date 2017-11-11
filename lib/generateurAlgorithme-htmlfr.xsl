@@ -47,7 +47,10 @@
 
             <xsl:for-each select="//balise">
                 <xsl:element name="xsl:template">
-                    <xsl:attribute name="match">//<xsl:value-of select="./fr"/></xsl:attribute>
+                    <xsl:attribute name="match"><!--
+                      --><xsl:for-each select="./fr"><!--
+                      -->//<xsl:value-of select="."/> <!--
+                      --></xsl:for-each></xsl:attribute>
                     <xsl:element name="{./en}">
                         <xsl:call-template name="gererAttributs"/>
                         <xsl:element name="xsl:apply-templates"></xsl:element>
@@ -58,28 +61,33 @@
         </xsl:element>
     </xsl:template>
 
-
-
+    
+    <!-- Template pour gérer les attributs -->
     <xsl:template name="gererAttributs">
-        <xsl:for-each select="//attribut">
-            <xsl:element name="xsl:attribute">
-                <xsl:attribute name="name"><xsl:value-of select="./en"/></xsl:attribute>
-                <xsl:element name="xsl:choose">
-                    <xsl:for-each select="./contenu">
-                        <xsl:element name="xsl:when">
-                            <xsl:attribute name="test">@<xsl:value-of select="../fr"/>='<xsl:value-of select="./fr"/>'</xsl:attribute>
-                            <xsl:element name="xsl:text"><xsl:value-of select="./en"/></xsl:element>
-                        </xsl:element>
-                    </xsl:for-each>
-                    <xsl:element name="xsl:otherwise">
-                        <xsl:element name="xsl:value-of">
-                            <xsl:attribute name="select">@<xsl:value-of select="./fr"/></xsl:attribute>
+        <xsl:for-each select="//attribut"> <!-- Pour chaque attribut de la traduction -->
+            <!-- insérer test "si l'élément parent à cet attribut" -->
+            <xsl:element name="xsl:if">
+                <xsl:attribute name="test">string-length(@<xsl:value-of select="./fr"/>)!=0</xsl:attribute>
+                <xsl:element name="xsl:attribute"> <!-- On créer un élement attribut -->
+                    <xsl:attribute name="name"><xsl:value-of select="./en"/></xsl:attribute> <!-- avec comme attr 'name', la trad en -->
+                    <xsl:element name="xsl:choose"> <!-- Ensuite on créer un élément 'choose' -->
+                        <xsl:for-each select="./contenu"> <!-- Pour chaque contenu d'un attribut -->
+                            <xsl:element name="xsl:when"> <!-- on créer un élément 'when' -->
+                                <xsl:attribute name="test">@<xsl:value-of select="../fr"/>='<xsl:value-of select="./fr"/>'</xsl:attribute> <!-- "si nous pouvons traduire" -->
+                                <xsl:element name="xsl:text"><xsl:value-of select="./en"/></xsl:element> <!-- "nous traduisons" -->
+                            </xsl:element>
+                        </xsl:for-each>
+                        <xsl:element name="xsl:otherwise"> <!-- Par défaut -->
+                            <xsl:element name="xsl:value-of"><!-- Afficher tel quel -->
+                                <xsl:attribute name="select">@<xsl:value-of select="./fr"/></xsl:attribute>
+                            </xsl:element>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
         </xsl:for-each>
 
+        <!-- Créer un élément qui signifiera "Pour tous les attributs non traduits, afficher les attributs tels quel" -->
         <xsl:element name="xsl:for-each">
             <xsl:attribute name="select">./@*</xsl:attribute>
             <xsl:element name="xsl:if">
@@ -92,6 +100,7 @@
                 </xsl:element>
             </xsl:element>
         </xsl:element>
+        
         
     </xsl:template>
     
