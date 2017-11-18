@@ -458,6 +458,8 @@
         <en>video</en>
         <fr>video</fr>
     </balise>
+    
+    
     <attribut>
         <en>target</en>
         <fr>cible</fr>
@@ -478,11 +480,10 @@
             <fr>_dessus</fr>
         </contenu>
     </attribut>
-	
-	<style-propriete>
-		<en></en>
-        <fr></fr>
-	</style-propriete>
+    <attribut>
+        <en>href</en>
+        <fr>url</fr>
+    </attribut>
 	
 	<commentaire type="t2">CSS</commentaire>
 	<commentaire type="t3">Propriétés</commentaire>

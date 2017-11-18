@@ -33,19 +33,19 @@
                 <xsl:element name="body">
                     <xsl:element name="xsl:apply-templates"></xsl:element>
                     <xsl:element name="script">
-                        <xsl:attribute name="src">https://dav.li/jquery/3.1.1.min.js</xsl:attribute>
+                        <xsl:attribute name="src">lib/jquery/jquery-3.2.1.min.js</xsl:attribute>
                     </xsl:element>
                     <xsl:element name="script">
-                        <xsl:attribute name="src">https://htmlfr.org/lib/lib-css.js</xsl:attribute>
+                        <xsl:attribute name="src">lib/lib-css.js</xsl:attribute>
                     </xsl:element>
                     <xsl:element name="script">
-                        <xsl:attribute name="src">https://htmlfr.org/lib/htmlfr.js</xsl:attribute>
+                        <xsl:attribute name="src">lib/htmlfr.js</xsl:attribute>
                     </xsl:element>
                 </xsl:element>
             </xsl:element>
 
 
-            <xsl:for-each select="//balise">
+            <xsl:for-each select="//balise[./en!='body' and ./en!='head']">
                 <xsl:element name="xsl:template">
                     <xsl:attribute name="match"><!--
                       --><xsl:for-each select="./fr"><!--
